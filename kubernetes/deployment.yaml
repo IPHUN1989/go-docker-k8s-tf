@@ -4,7 +4,7 @@ metadata:
   name: go-web-server-deployment
   namespace: go-web-server
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: go-web-server
