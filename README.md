@@ -43,6 +43,8 @@
 
 ## Local test with Minikube
 
+![Minikube](./assets/minikube.gif)
+
 ```bash
 # Star Minikube
 minikube start
@@ -61,7 +63,11 @@ kubectl get svc -n go-web-server
 terraform destroy
 ```
 
+
 ## Cloud test with AWS EKS
+![eksctl_first_part](./assets/eksctl_1.gif)
+![eksctl_second_part](./assets/eksctl_2.gif)
+
 
 ```bash
 # Fill out the requested variable in the /terraform/terraform.tfvars
@@ -70,7 +76,12 @@ terraform destroy
 
 # Navigate to the main folder and start the cluster with
 eksctl create cluster -f ./eksctl_cluster.yaml 
+```
 
+![aws](./assets/aws.gif)
+
+
+```bash
 # Update the kubeconfig manually
 aws eks update-kubeconfig --name my-cluster --region eu-central-1
 
