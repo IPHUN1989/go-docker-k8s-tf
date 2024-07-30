@@ -7,6 +7,7 @@ print_usage() {
 }
 
 apply_terraform() {
+    terraform init
     echo "yes" | terraform apply    
 }
 

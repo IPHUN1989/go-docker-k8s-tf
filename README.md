@@ -44,6 +44,9 @@
 ## Local test with Minikube
 
 ```bash
+# Star Minikube
+minikube start
+
 # Please be aware that minikube tunnel requires root privileges, so if you are running it as a non root user be prepared to enter your sudo password, unless you have paswordless sudo configured
 
 # Navigate to the terraform folder
@@ -52,7 +55,7 @@
 # Check the application 
 kubectl get svc -n go-web-server
 
-# You can visit the hello on the external IP
+# You can visit the hello world application on the external IP
 
 # If you do not wish to use anymore the application you can use the following command:
 terraform destroy
@@ -77,7 +80,7 @@ aws eks update-kubeconfig --name my-cluster --region eu-central-1
 # Check the application 
 kubectl get svc -n go-web-server
 
-# You can visit the hello on the external IP
+# You can visit the hello world application on the external IP
 
 # If you do not wish to use anymore the application you can use the following command:
 terraform destroy
